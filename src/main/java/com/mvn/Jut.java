@@ -52,6 +52,8 @@ public class Jut {
         String filePath = "e://new-1.gif";  
         BufferedImage image;  
         try {  
+        	
+        	
             image = ImageIO.read(new File(filePath));  
             LuminanceSource source = new BufferedImageLuminanceSource(image);  
             Binarizer binarizer = new HybridBinarizer(source);  
