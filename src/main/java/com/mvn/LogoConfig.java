@@ -8,10 +8,11 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;  
-/** 
- * 二维码 添加 logo图标 处理的方法, 
- * 模仿微信自动生成二维码效果，有圆角边框，logo和二维码间有空白区，logo带有灰色边框 
- * @author Administrator sangwenhao 
+
+/**
+ * 二维码 添加 logo图标 处理的方法, 模仿微信自动生成二维码效果，有圆角边框，logo和二维码间有空白区，lo go带有灰色边框
+ * 
+ * @author Administrator sangwenhao
  * 
  */  
 public class LogoConfig {  

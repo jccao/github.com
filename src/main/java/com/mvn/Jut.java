@@ -31,7 +31,7 @@ import com.google.zxing.common.HybridBinarizer;
 public class Jut {
 	@Test
 	public void testEncode() throws WriterException, IOException {
-		String filePath = "D://1111111111111";
+		String filePath = "D://1111111111111 ";
 		String fileName = "zxing.png";
 		String content = "https://github.com/zxing/zxing/tree/zxing-3.0.0/javase/src/main/java/com/google/zxing";// 内容
 		int width = 200; // 图像宽度
