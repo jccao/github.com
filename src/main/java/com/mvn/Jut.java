@@ -12,7 +12,6 @@ import javax.imageio.ImageIO;
 
 import org.junit.Test;
 
-import com.alibaba.fastjson.JSONObject;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.Binarizer;
 import com.google.zxing.BinaryBitmap;
