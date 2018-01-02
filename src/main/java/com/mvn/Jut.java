@@ -12,6 +12,7 @@ import javax.imageio.ImageIO;
 
 import org.junit.Test;
 
+import com.alibaba.fastjson.JSONObject;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.Binarizer;
 import com.google.zxing.BinaryBitmap;
@@ -31,9 +32,9 @@ import com.google.zxing.common.HybridBinarizer;
 public class Jut {
 	@Test
 	public void testEncode() throws WriterException, IOException {
-		String filePath = "D://       sss     ";
+		String filePath = "D://";
 		String fileName = "zxing.png";
-		String content = " https://github.com/zxing/zxing/tree/zxing-3.0.0/javase/src/main/java/com/google/zxing";// 内容
+		String content = "https://github.com/zxing/zxing/tree/zxing-3.0.0/javase/src/main/java/com/google/zxing";// 内容
 		int width = 200; // 图像宽度
 		int height = 200; // 图像高度
 		String format = "png";// 图像类型
@@ -43,7 +44,7 @@ public class Jut {
 				BarcodeFormat.QR_CODE, width, height, hints);// 生成矩阵
 		Path path = FileSystems.getDefault().getPath(filePath, fileName);
 		MatrixToImageWriter.writeToPath(bitMatrix, format, path);// 输出图像
-		System.out.println("输出成功.                                 ");
+		System.out.println("输出成功.");
 	}
 	
 	@Test  
@@ -58,7 +59,7 @@ public class Jut {
             Map<DecodeHintType, Object> hints = new HashMap<DecodeHintType, Object>();  
             hints.put(DecodeHintType.CHARACTER_SET, "UTF-8");  
             Result result = new MultiFormatReader().decode(binaryBitmap, hints);// 对图像进行解码  
-            System.out.println("                  图片中内容：  "+result.getText());  
+            System.out.println("图片中内容：  "+result.getText());  
             System.out.println("图片中格式：  "+result.getBarcodeFormat());  
         } catch (IOException e) {  
             e.printStackTrace();  
