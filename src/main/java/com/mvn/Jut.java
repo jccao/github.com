@@ -43,7 +43,7 @@ public class Jut {
 				BarcodeFormat.QR_CODE, width, height, hints);// 生成矩阵
 		Path path = FileSystems.getDefault().getPath(filePath, fileName);
 		MatrixToImageWriter.writeToPath(bitMatrix, format, path);// 输出图像
-		System.out.println("输出成功.");
+		System.out.println("输出成功.                                 ");
 	}
 	
 	@Test  
