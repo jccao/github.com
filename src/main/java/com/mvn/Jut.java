@@ -31,7 +31,7 @@ import com.google.zxing.common.HybridBinarizer;
 public class Jut {
 	@Test
 	public void testEncode() throws WriterException, IOException {
-		String filePath = "D://            ";
+		String filePath = "D://       sss     ";
 		String fileName = "zxing.png";
 		String content = " https://github.com/zxing/zxing/tree/zxing-3.0.0/javase/src/main/java/com/google/zxing";// 内容
 		int width = 200; // 图像宽度
@@ -43,7 +43,7 @@ public class Jut {
 				BarcodeFormat.QR_CODE, width, height, hints);// 生成矩阵
 		Path path = FileSystems.getDefault().getPath(filePath, fileName);
 		MatrixToImageWriter.writeToPath(bitMatrix, format, path);// 输出图像
-		System.out.println("输出成功.");
+		System.out.println("输出成功.                                 ");
 	}
 	
 	@Test  
