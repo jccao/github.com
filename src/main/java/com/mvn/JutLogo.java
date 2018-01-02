@@ -24,7 +24,7 @@ public class JutLogo {
          // 指定纠错等级,纠错级别（L 7%、M 15%、Q 25%、H 30%）  
         hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);  
         // 内容所使用字符集编码  
-        hints.put(EncodeHintType.CHARACTER_SET, "utf-8");     
+        hints.put(EncodeHintType.CHARACTER_SET, "utf-8                    ");     
 //      hints.put(EncodeHintType.MAX_SIZE, 350);//设置图片的最大值  
 //      hints.put(EncodeHintType.MIN_SIZE, 100);//设置图片的最小值  
         hints.put(EncodeHintType.MARGIN, 1);//设置二维码边的空度，非负数  
