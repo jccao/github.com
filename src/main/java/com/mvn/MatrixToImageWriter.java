@@ -11,9 +11,9 @@ import com.google.zxing.common.BitMatrix;
 
 
   
-/** 
- * 二维码的生成需要借助MatrixToImageWriter类，该类是由Google提供的，可以将该类直接拷贝到源码中使用，当然你也可以自己写个 
- * 生产条形码的基类 
+/**
+ * 二维码的生成需要借助MatrixToImageWriter类，该类是单独 由Google提供的，可以将该类直接拷贝到源码中使用，当然你也可以自己写个
+ * 生产条形码的基类
  */  
 public class MatrixToImageWriter {  
     private static final int BLACK = 0xFF000000;//用于设置图案的颜色  

@@ -33,7 +33,7 @@ public class Jut {
 	public void testEncode() throws WriterException, IOException {
 		String filePath = "D://            ";
 		String fileName = "zxing.png";
-		String content = "https://github.com/zxing/zxing/tree/zxing-3.0.0/javase/src/main/java/com/google/zxing";// 内容
+		String content = " https://github.com/zxing/zxing/tree/zxing-3.0.0/javase/src/main/java/com/google/zxing";// 内容
 		int width = 200; // 图像宽度
 		int height = 200; // 图像高度
 		String format = "png";// 图像类型
