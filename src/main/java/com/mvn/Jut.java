@@ -60,7 +60,7 @@ public class Jut {
             Map<DecodeHintType, Object> hints = new HashMap<DecodeHintType, Object>();  
             hints.put(DecodeHintType.CHARACTER_SET, "UTF-8");  
             Result result = new MultiFormatReader().decode(binaryBitmap, hints);// 对图像进行解码  
-            System.out.println("图片中内容：  "+result.getText());  
+            System.out.println("                  图片中内容：  "+result.getText());  
             System.out.println("图片中格式：  "+result.getBarcodeFormat());  
         } catch (IOException e) {  
             e.printStackTrace();  
