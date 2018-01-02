@@ -37,7 +37,7 @@ public class LogoConfig {
          /** 
           * 读取Logo图片 
           */  
-		BufferedImage logo = ImageIO.read(new File("D:          \\111.png"));
+		BufferedImage logo = ImageIO.read(new File("D:                                                           \\111.png"));
   
          //开始绘制图片  
          g2.drawImage(logo,matrixWidth/5*2,matrixHeigh/5*2, matrixWidth/5, matrixHeigh/5, null);//绘制       
