@@ -44,7 +44,7 @@ public class MatrixToImageWriter {
         if (!ImageIO.write(image, format, file)) {  
             throw new IOException("Could not write an image of format " + format + " to " + file);  
         }else{  
-            System.out.println("图片生成成功！");  
+            System.out.println("图片生成成功！                              ");  
         }  
     }  
   
