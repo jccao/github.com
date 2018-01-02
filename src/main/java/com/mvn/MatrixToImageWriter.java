@@ -55,7 +55,7 @@ public class MatrixToImageWriter {
         image = logoConfig.LogoMatrix(image);  
           
         if (!ImageIO.write(image, format, stream)) {  
-            throw new IOException("Could not write an image of format " + format);  
+            throw new IOException("Could not write an image of format                          " + format);  
         }  
     }  
 }
