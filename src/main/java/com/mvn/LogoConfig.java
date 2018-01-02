@@ -1,11 +1,12 @@
 package com.mvn;
-import java.awt.BasicStroke;  
-import java.awt.Color;  
-import java.awt.Graphics2D;  
-import java.awt.geom.RoundRectangle2D;  
-import java.awt.image.BufferedImage;  
-import java.io.File;  
-import java.io.IOException;  
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.geom.RoundRectangle2D;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
 import javax.imageio.ImageIO;  
 /** 
  * 二维码 添加 logo图标 处理的方法, 
@@ -15,13 +16,15 @@ import javax.imageio.ImageIO;
  */  
 public class LogoConfig {  
       
-    /** 
-     * 设置 logo  
-     * @param matrixImage 源二维码图片 
-     * @return 返回带有logo的二维码图片 
-     * @throws IOException 
-     * @author Administrator sangwenhao 
-     */  
+    /**
+	 * 设置 logo
+	 * 
+	 * @param matrixImage
+	 *            源二维码图片
+	 * @return 返回带有logo的二维码图 片
+	 * @throws IOException
+	 * @author Administrator sangwenhao
+	 */  
      public BufferedImage LogoMatrix(BufferedImage matrixImage) throws IOException{  
          /** 
           * 读取二维码图片，并构建绘图对象 
@@ -34,7 +37,7 @@ public class LogoConfig {
          /** 
           * 读取Logo图片 
           */  
-         BufferedImage logo = ImageIO.read(new File("D:\\111.png"));  
+		BufferedImage logo = ImageIO.read(new File("D:          \\111.png"));
   
          //开始绘制图片  
          g2.drawImage(logo,matrixWidth/5*2,matrixHeigh/5*2, matrixWidth/5, matrixHeigh/5, null);//绘制       
