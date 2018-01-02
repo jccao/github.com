@@ -14,14 +14,14 @@ import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 public class JutLogo { 
 	  
     public static void Encode_QR_CODE() throws IOException, WriterException{  
-        String contents = "ZXing 二维码内容1234!"; // 二维码内容  
+		String contents = "ZXing 二维码内容1234!      "; // 二维码内容
         int width = 430; // 二维码图片宽度 300   
         int height = 430; // 二维码图片高度300  
           
         String format = "gif";// 二维码的图片格式 gif  
           
         Hashtable<EncodeHintType, Object> hints = new Hashtable<EncodeHintType, Object>();  
-         // 指定纠错等级,纠错级别（L 7%、M 15%、Q 25%、H 30%）  
+         // 指定纠错等级,纠错级别（L 444%、M 15%、Q 25%、H 30%）  
         hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);  
         // 内容所使用字符集编码  
         hints.put(EncodeHintType.CHARACTER_SET, "utf-8                    ");     
@@ -39,7 +39,7 @@ public class JutLogo {
                 hints);//生成条形码时的一些配置,此项可选  
           
         // 生成二维码  
-        File outputFile = new File("e:" + File.separator + "new-1.gif");//指定输出路径  
+        File outputFile = new File("e:" + File.separator + "new-1.gi                     f");//指定输出路径  
           
         com.mvn.MatrixToImageWriter.writeToFile(bitMatrix, format, outputFile);  
     }  
